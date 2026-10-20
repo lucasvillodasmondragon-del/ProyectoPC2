@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <!--  <a href="#" class="logo">Logo</a> -->
+            <input type="checkbox" id="menuToggle" class="menu-toggle" />
+            <label for="menuToggle" class="menu-icon">
+                <img src="img/menu.png" alt="Menú" />
+            </label>
+            <p class="menu-links">
+                <a href="index.html" class="menu-link">Inicio</a>
+                <a href="servicios.html" class="menu-link">Servicios</a>
+                <a href="nosotros.html" class="menu-link">Nosotros</a>
+                <a href="contacto.html" class="menu-link">Contacto</a>
+                <a href="registro.html" class="menu-link">Registrarse</a>
+                <a href="login.html" class="menu-link">Login</a>
+            </p>
+        </div>
+    </header>
+    <main>
+        <h2>Registro de Usuario</h2>
+        <form class="form-container">
+            <div class="form-group">
+                <label for="txtUsuario">Usuario</label>
+                <input type="text" id="txtUsuario" required>
+                <span id="usuarioMsg"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="txtNombre">Nombre</label>
+                <input type="text" id="txtNombre" required>
+                <span id="nombreMsg"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="txtApellido">Apellido</label>
+                <input type="text" id="txtApellido" required>
+                <span id="apellidoMsg"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="txtCorreo">Correo</label>
+                <input type="email" id="txtCorreo" required>
+                <span id="correoMsg"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="txtClave">Contraseña</label>
+                <input type="password" id="txtClave" required>
+                <span id="claveMsg"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="txtClaveRep">Repetir Contraseña</label>
+                <input type="password" id="txtClaveRep" required>
+                <span id="claveRepMsg"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" id="btnRegistrar" value="Registrarse" class="btn-1">
+            </div>
+        </form>
+    </main>
+    <!--modal-->
+    <div id="modal" style="display:none;">
+        <div id="modal-content">
+            <p>¡Registro completado con éxito!</p>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <p>
+                    <a href="">Políticas y términos</a>
+                    <a href="">Preguntas</a>
+                    <a href="">Canal de Whatsapp</a>
+                    <a href="">Facebook</a>
+                </p>
+            </div>
+            <div class="footer-copy">
+                © 2025 ODM Dental Studio. Lima, Perú.
+            </div>
+        </div>
+    </footer>
+    <script src="js/registro.js"></script>
+</body>
+
+</html>

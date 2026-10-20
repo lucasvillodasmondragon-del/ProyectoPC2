@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Intranet</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <!--  <a href="#" class="logo">Logo</a> -->
+            <input type="checkbox" id="menuToggle" class="menu-toggle" />
+            <label for="menuToggle" class="menu-icon">
+                <img src="img/menu.png" alt="Menú" />
+            </label>
+
+            <p class="menu-links">
+                <a href="#" class="menu-link">Gestionar Citas</a>
+                <a href="#" class="menu-link">Mantenimiento de Pacientes</a>
+                <a href="#" class="menu-link">Tratamientos</a>
+                <a href="#" class="menu-link">Reportes</a>
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <button type="submit" id="btnCerrar" class="btn-1 cerrar-sesion">Cerrar Sesión</button>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <!-- Copyright -->
+            <div class="footer-links">
+                <p>
+                    <a href="">Políticas y términos</a>
+                    <a href="">Preguntas</a>
+                    <a href="">Canal de Whatsapp</a>
+                    <a href="">Facebook</a>
+                </p>
+            </div>
+            <div class="footer-copy">
+                © 2025 ODM Dental Studio. Lima, Perú.
+            </div>
+        </div>
+    </footer>
+    <!--<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const btnCerrar = document.getElementById('btnCerrar');
+            if (btnCerrar) {
+                btnCerrar.addEventListener("click", function () {
+                    const confirmar = confirm("¿Estás seguro que deseas salir?");
+                    if (confirmar) {
+                        window.location.href = "login.html";
+                    }
+                });
+            }
+        });
+    </script>-->
+    <dialog id="cerrarSesionDialog">
+        <h3>¿Estás seguro que deseas cerrar sesión?</h3>
+        <div style="margin-top: 1rem;">
+            <button id="confirmCerrar" class="btn-1">Sí, salir</button>
+            <button id="cancelCerrar" class="btn-1">Cancelar</button>
+        </div>
+    </dialog>
+    <script src="js/intranet.js"></script>
+</body>
+
+</html>
