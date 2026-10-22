@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --color-primario: #4f9197;
-    --color-secundario-odm: #044c62;
+    --color-primario: #29df99;
+    --color-secundario-odm: #dd0b39;
     --color-claro-odm: #f4f7f6;
     --color-texto-oscuro-odm: #333;
     --sombra-suave: 0 4px 10px rgba(0, 0, 0, 0.08);
