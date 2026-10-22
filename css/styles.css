@@ -736,3 +736,8 @@ dialog {
 #modal-content button:hover {
     background-color: #0056b3;
 }
+
+.lista-servicios {
+    color: #05ff3b; 
+    list-style: none; 
+}
